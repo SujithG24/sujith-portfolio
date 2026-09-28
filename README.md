@@ -21,49 +21,42 @@
 ### 01 — Hero Experience & 3D Interactive Particle Field
 > 1,800 responsive 3D particles with deceleration sweep, cursor-driven parallax, and animated typography.
 
-![Hero Section](screenshots/01-hero.png)
+![Hero Page](<screenshots/Hero Page.png>)
 
 ---
 
-### 02 — Editorial About Section
-> High-contrast, typography-first identity communicating engineering philosophy and key academic metrics.
+### 02 — Tech DNA & Skills Matrix
+> Practical engineering stack organized across Languages, Development, Cloud & Tools, and Problem Solving.
 
-![About Section](screenshots/02-about.png)
+![Skill Page](<screenshots/Skill Page.png>)
 
 ---
 
 ### 03 — Featured Projects & Case Studies
 > Showcase of full-stack system architecture (Spring Boot, React, MySQL) and AI/Computer Vision systems.
 
-![Projects Section](screenshots/03-projects.png)
+![Project Page](<screenshots/Project Page.png>)
 
 ---
 
 ### 04 — Professional Experience / Internship
 > Sysent Technologies internship detailing AI handwritten mark detection, extraction, and ML classification pipelines.
 
-![Experience Section](screenshots/04-experience.png)
+![Experience Page](<screenshots/Experience Page.png>)
 
 ---
 
 ### 05 — Interactive Resume Profile
 > Integrated PDF delivery serving verified credentials and technical qualifications with single-click access.
 
-![Resume Section](screenshots/05-resume.png)
+![Resume Page](<screenshots/Resume Page.png>)
 
 ---
 
 ### 06 — Direct Contact & Social Integration
 > Viewport-fitted communication layer with quick-access links to verified profiles.
 
-![Contact Section](screenshots/06-contact.png)
-
----
-
-### 07 — Production Vercel Deployment Proof
-> Globally distributed CDN deployment with automated continuous integration (CI/CD) and SSL/HTTPS.
-
-![Vercel Deployment](screenshots/07-deployment-proof.png)
+![Contact Page](<screenshots/Contact Page.png>)
 
 ---
 
