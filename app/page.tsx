@@ -110,7 +110,7 @@ export default function Home() {
 
               <div className="about-stats">
                 <div>
-                  <strong>8.4</strong>
+                  <strong>8.5</strong>
                   <span>CGPA</span>
                 </div>
 
