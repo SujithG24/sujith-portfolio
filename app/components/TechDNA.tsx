@@ -26,7 +26,6 @@ import {
 } from "react-icons/si";
 import { FaJava, FaAws, FaCss3Alt } from "react-icons/fa6";
 import {
-  TbDevices,
   TbClick,
   TbApi,
   TbDatabase,
@@ -35,7 +34,6 @@ import {
   TbEyeCheck,
   TbCube,
   TbBinaryTree,
-  TbBrain,
 } from "react-icons/tb";
 
 interface TechItem {
@@ -63,7 +61,6 @@ const CATEGORIES: TechCategory[] = [
       { name: "Tailwind CSS", icon: SiTailwindcss, brandColor: "#06B6D4" },
       { name: "HTML5", icon: SiHtml5, brandColor: "#E34F26" },
       { name: "CSS3", icon: FaCss3Alt, brandColor: "#1572B6" },
-      { name: "Responsive Design", icon: TbDevices, brandColor: "#94A3B8" },
       { name: "DOM & Events", icon: TbClick, brandColor: "#94A3B8" },
       { name: "REST API Integration", icon: TbApi, brandColor: "#94A3B8" },
     ],
@@ -116,7 +113,6 @@ const CATEGORIES: TechCategory[] = [
       { name: "OpenCV", icon: SiOpencv, brandColor: "#5C3EE8" },
       { name: "Object-Oriented Programming", icon: TbCube, brandColor: "#94A3B8" },
       { name: "Data Structures", icon: TbBinaryTree, brandColor: "#94A3B8" },
-      { name: "Problem Solving", icon: TbBrain, brandColor: "#94A3B8" },
     ],
   },
 ];
