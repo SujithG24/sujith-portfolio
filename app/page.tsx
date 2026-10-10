@@ -81,47 +81,102 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-heading">
             <span>01 — ABOUT</span>
-            <span>WHO I AM</span>
+            <span>EDUCATION</span>
           </div>
 
-          <div className="about-grid">
-            <h2 className="about-title">
-              I BUILD
-              <br />
-              <span>SOFTWARE</span>
-              <br />
-              THAT
-              <br />
-              <span>MATTERS.</span>
+          <div className="education-intro">
+            <span className="education-intro-label">MY EDUCATION</span>
+            <h2 className="education-intro-tagline">
+              The journey behind the engineer.
             </h2>
+          </div>
 
-            <div className="about-content">
-              <p>
-                I&apos;m Sujith, a Computer Science Engineering graduate focused
-                on building full-stack applications and developing strong backend
-                engineering skills.
-              </p>
+          <div className="education-grid">
+            {/* ENTRY 01 — COLLEGE (PRIMARY EMPHASIS) */}
+            <div className="education-card education-card-primary">
+              <div className="education-card-top">
+                <div className="education-badge">CURRENT DEGREE</div>
+                <span className="education-grad-year">CLASS OF 2026</span>
+              </div>
 
-              <p>
-                My current focus is Java, Spring Boot, SQL, React and backend
-                systems. I enjoy understanding how systems work behind the
-                interface — not just making them look good.
-              </p>
+              <div className="education-primary-body">
+                <span className="education-primary-degree">
+                  B.E. Computer Science and Engineering
+                </span>
+                <h3 className="education-primary-inst">
+                  Dr. Mahalingam College of Engineering and Technology
+                </h3>
+                <p className="education-location">Pollachi, Tamil Nadu</p>
+              </div>
 
-              <div className="about-stats">
-                <div>
-                  <strong>8.5</strong>
-                  <span>CGPA</span>
+              <div className="education-card-divider" />
+
+              <div className="education-card-bottom">
+                <div className="education-cgpa-box">
+                  <span className="education-cgpa-label">CUMULATIVE GPA</span>
+                  <div className="education-cgpa-value-row">
+                    <span className="education-cgpa-num" id="cgpa-counter">
+                      8.5
+                    </span>
+                    <span className="education-cgpa-scale">/ 10.0</span>
+                  </div>
                 </div>
 
-                <div>
-                  <strong>2026</strong>
-                  <span>GRADUATE</span>
+                <div className="education-card-indicator" aria-hidden="true">
+                  <span className="education-card-arrow">↗</span>
+                </div>
+              </div>
+            </div>
+
+            {/* COLUMN 2 — SCHOOL QUALIFICATIONS */}
+            <div className="education-secondary-col">
+              {/* ENTRY 02 — HIGHER SECONDARY */}
+              <div className="education-card education-card-secondary">
+                <div className="education-secondary-top">
+                  <div className="education-secondary-meta">
+                    <span className="education-level-tag">
+                      HIGHER SECONDARY · CLASS XII
+                    </span>
+                    <h4 className="education-secondary-title">
+                      Higher Secondary Certificate — Class XII
+                    </h4>
+                  </div>
+                  <div className="education-score-badge">
+                    <span className="education-score-num">90%</span>
+                    <span className="education-score-label">SCORE</span>
+                  </div>
                 </div>
 
-                <div>
-                  <strong>BE</strong>
-                  <span>CSE</span>
+                <div className="education-secondary-body">
+                  <h5 className="education-secondary-inst">
+                    SCISM Matric Hr. Sec. School
+                  </h5>
+                  <p className="education-location">Bodinayakanur, Tamil Nadu</p>
+                </div>
+              </div>
+
+              {/* ENTRY 03 — SECONDARY */}
+              <div className="education-card education-card-secondary">
+                <div className="education-secondary-top">
+                  <div className="education-secondary-meta">
+                    <span className="education-level-tag">
+                      SECONDARY · CLASS X
+                    </span>
+                    <h4 className="education-secondary-title">
+                      Secondary School Certificate — Class X
+                    </h4>
+                  </div>
+                  <div className="education-score-badge">
+                    <span className="education-score-num">82%</span>
+                    <span className="education-score-label">SCORE</span>
+                  </div>
+                </div>
+
+                <div className="education-secondary-body">
+                  <h5 className="education-secondary-inst">
+                    SCISM Matric Hr. Sec. School
+                  </h5>
+                  <p className="education-location">Bodinayakanur, Tamil Nadu</p>
                 </div>
               </div>
             </div>

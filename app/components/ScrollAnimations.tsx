@@ -46,41 +46,93 @@ export default function ScrollAnimations() {
         });
       });
 
-      /* ================= ABOUT ================= */
+      /* ================= ABOUT / EDUCATION ================= */
 
-      gsap.from(".about-title", {
-        scrollTrigger: {
-          trigger: ".about-section",
-          start: "top 75%",
-        },
-        y: 100,
-        opacity: 0,
-        duration: 1.2,
-        ease: "power4.out",
-      });
+      const prefersReduced =
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      gsap.from(".about-content > p", {
+      // Animate the introductory heading upward into view
+      gsap.from(".education-intro > *", {
         scrollTrigger: {
-          trigger: ".about-section",
-          start: "top 70%",
+          trigger: ".education-intro",
+          start: "top 85%",
         },
-        y: 50,
+        y: 40,
         opacity: 0,
         duration: 0.9,
-        stagger: 0.15,
-        delay: 0.2,
+        stagger: 0.12,
         ease: "power3.out",
       });
 
-      gsap.from(".about-stats div", {
+      // Reveal college entry (card entrance)
+      gsap.from(".education-card-primary", {
         scrollTrigger: {
-          trigger: ".about-stats",
-          start: "top 88%",
+          trigger: ".education-card-primary",
+          start: "top 82%",
         },
-        y: 35,
+        y: 60,
         opacity: 0,
-        duration: 0.7,
-        stagger: 0.15,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      // Animate institution name using a smooth upward reveal, degree and graduation year
+      gsap.from(
+        [
+          ".education-primary-degree",
+          ".education-primary-inst",
+          ".education-location",
+          ".education-card-divider",
+          ".education-card-bottom",
+        ],
+        {
+          scrollTrigger: {
+            trigger: ".education-card-primary",
+            start: "top 80%",
+          },
+          y: 25,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.08,
+          delay: 0.15,
+          ease: "power3.out",
+        }
+      );
+
+      // Animate the CGPA into view with a subtle counting effect from 0 to 8.5 settling at 8.5
+      const cgpaElement = document.querySelector("#cgpa-counter");
+      if (cgpaElement && !prefersReduced) {
+        const counter = { val: 0 };
+        gsap.to(counter, {
+          val: 8.5,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".education-card-primary",
+            start: "top 80%",
+            once: true,
+          },
+          onUpdate: () => {
+            cgpaElement.textContent = counter.val.toFixed(1);
+          },
+          onComplete: () => {
+            cgpaElement.textContent = "8.5";
+          },
+        });
+      }
+
+      // School entries: Reveal 12th-standard entry first, 10th-standard entry second with stagger
+      gsap.from(".education-card-secondary", {
+        scrollTrigger: {
+          trigger: ".education-secondary-col",
+          start: "top 80%",
+        },
+        y: 45,
+        opacity: 0,
+        duration: 0.9,
+        stagger: 0.2,
+        delay: 0.15,
         ease: "power3.out",
       });
 
