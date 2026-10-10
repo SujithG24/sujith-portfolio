@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import ScrollAnimations from "./components/ScrollAnimations";
 import Cursor from "./components/Cursor";
+import TechDNA from "./components/TechDNA";
 
 export default function Home() {
   return (
@@ -149,63 +150,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="skills-grid">
-            <div className="skill-card">
-              <span className="skill-index">01</span>
-              <h3>BACKEND &amp; APIS</h3>
-              <div className="skill-list">
-                <span>JAVA</span>
-                <span>SPRING BOOT</span>
-                <span>RESTful APIs</span>
-                <span>SPRING DATA JPA</span>
-                <span>HIBERNATE</span>
-                <span>JWT AUTH</span>
-                <span>POSTMAN</span>
-                <span>MAVEN</span>
-              </div>
-            </div>
-
-            <div className="skill-card">
-              <span className="skill-index">02</span>
-              <h3>FRONTEND DEVELOPMENT</h3>
-              <div className="skill-list">
-                <span>REACT.JS</span>
-                <span>JAVASCRIPT (ES6+)</span>
-                <span>TAILWIND CSS</span>
-                <span>AXIOS</span>
-                <span>CONTEXT API</span>
-                <span>RESPONSIVE UI</span>
-                <span>HTML5 &amp; CSS3</span>
-              </div>
-            </div>
-
-            <div className="skill-card">
-              <span className="skill-index">03</span>
-              <h3>DATABASE &amp; CLOUD</h3>
-              <div className="skill-list">
-                <span>MYSQL</span>
-                <span>SQL QUERIES</span>
-                <span>AWS CLOUD</span>
-                <span>GIT</span>
-                <span>GITHUB</span>
-                <span>DOCKER</span>
-                <span>DB MODELING</span>
-              </div>
-            </div>
-
-            <div className="skill-card">
-              <span className="skill-index">04</span>
-              <h3>ARCHITECTURE &amp; AI</h3>
-              <div className="skill-list">
-                <span>PYTHON</span>
-                <span>OPENCV</span>
-                <span>IMAGE PROCESSING</span>
-                <span>OOP &amp; SOLID</span>
-                <span>MVC PATTERN</span>
-                <span>SYSTEM DESIGN</span>
-              </div>
-            </div>
-          </div>
+          <TechDNA />
         </div>
       </section>
 
